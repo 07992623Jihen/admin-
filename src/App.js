@@ -18,12 +18,10 @@ import { UserAuth } from "./hooks/auth";
 import { Authcontext } from "./context/auth-context";
 import Login from "./views/login";
 import NavBar from "./components/nav-bar";
-import ChartsPage from "./views/chart";
 import ListClient from "./views/agriculteur/list";
 import ListIngenieure from "./views/ingenieur/list";
 import AjoutIngenieure from "./views/ingenieur/ajout";
-import UpdateIngenieure from "./views/ingenieur/update";
-import BloqueIngenieure from "./views/ingenieur/bloque";
+
 
 
 
@@ -38,8 +36,8 @@ function App() {
         <Route exact  path="/" component={ListClient} />
         <Route  path="/ingenieure" component={ListIngenieure} />
         <Route  path="/ajout-ingenieure" component={AjoutIngenieure} />
-        <Route  path="/update-ingenieure/:id" component={UpdateIngenieure} />
-        <Route  path="/bloque-ingenieure/:id" component={BloqueIngenieure} />
+     
+        
       </React.Fragment>
     );
   } else {

@@ -20,6 +20,10 @@ import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
 import { Link } from "react-router-dom";
 import SimpleMenu from "./NavBarMenu";
 import DashboardIcon from "@material-ui/icons/Dashboard";
+import ListIcon from "@material-ui/icons/List";
+import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
+import MessageIcon from "@material-ui/icons/Message";
+
 
 const drawerWidth = 240;
 
@@ -159,7 +163,7 @@ export default function NavBar(props) {
               <ListItemText primary="Ingénieures" />
             </ListItem>
           </Link>
-          
+         
         </List>
         <Divider />
       </Drawer>

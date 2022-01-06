@@ -94,7 +94,7 @@ const Login = (props) => {
               />
             </div>
             <div className="text-center">
-              <MDBBtn type="submit">Valider</MDBBtn>
+              <MDBBtn type="submit">authentifier</MDBBtn>
             </div>
           </form>
         </Col>

@@ -125,33 +125,7 @@ export default function ListIngenieure() {
                         </StyledTableCell>
 
                         <StyledTableCell align="right">
-                          <DeleteForeverIcon
-                            style={{ color: "red" }}
-                            onClick={async (event) => {
-                              try {
-                                let response = await fetch(
-                                  `http://localhost:5000/api/ingenieur/${row._id}`,
-                                  {
-                                    method: "DELETE",
-                                    headers: {
-                                      "Content-Type": "application/json",
-                                    },
-                                  }
-                                );
-                                let responsedata = await response.json();
-                                if (!response.ok) {
-                                  throw new Error(responsedata.message);
-                                }
-                                setList(
-                                  list.filter((el) => el._id !== row._id)
-                                );
-                                setsuccess("Ingénieure bien suprimer");
-                              } catch (err) {
-                                console.log(err);
-                                seterror(err.message || "il y a un probleme");
-                              }
-                            }}
-                          />
+                          
                           {row.bloque == false ? (
                             <Button
                               variant="warning"
