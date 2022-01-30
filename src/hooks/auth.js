@@ -25,7 +25,7 @@ export const UserAuth = () => {
     setUserId(null);
     setUser(null);
     localStorage.removeItem("userData");
-    window.location.href = "http://localhost:3000";
+    
   }, []);
 
   useEffect(() => {
